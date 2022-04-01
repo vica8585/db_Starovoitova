@@ -1,0 +1,33 @@
+header nav {
+display: inline-block;
+}
+nav ul li {
+    display: inline-block;
+}
+.button__size {
+    width: 40px;
+    height: 40px;
+}
+.button__color {
+    width: 34px;
+    height: 34px;
+    padding: 3px;
+}
+.button__color_white {
+    background-color: white;
+}
+.button__color_black {
+    background: black;
+}
+.button__color_grey {
+    background: #AEAEB0;
+}
+.button__color_purpleLatte {
+    background: #BA9BE5;    
+}
+.button__color_pink {
+    background: #E9A0A7;
+}
+.button__color_orange {
+    background: #F8CAB1;
+}
