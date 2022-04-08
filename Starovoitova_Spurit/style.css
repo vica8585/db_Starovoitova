@@ -1,9 +1,9 @@
-header nav {
-display: inline-block;
+.list {
+    list-style-type: none;
 }
-nav ul li {
-    display: inline-block;
-}
+.nav__list{
+    display: inline-block;  
+}    
 .button__size {
     width: 40px;
     height: 40px;
