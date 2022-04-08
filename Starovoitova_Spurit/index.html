@@ -8,7 +8,8 @@
     <title>White unisex T-shirt Susparsa</title>
 </head>
 <body>
-    <header>
+    <a class="skiplink" href="#main">Main content</a>
+    <header role="banner">
         <!--Main navigation-->
         <nav>
             <ul>
@@ -28,9 +29,9 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="main" tabindex=" -1" role="main" aria-label="Main content">
         <!--Product card-->
-        <article class="product-card" aria-label="Product card">
+        <article class="product-card" role="article" aria-label="Product card">
             <section>
                 <figure>
                     <img src="imgs/mainPic.jpg" alt="White unisex t-shirt">
@@ -39,23 +40,23 @@
             </section>
             <section>
             <header>
-                <h1 id="heading_1">White unisex t-shirt</h1>
+                <h1 id="heading_1" aria-label="White unisex t-shirt">White unisex t-shirt</h1>
                 <p class="code">CHF 40</p>
                 <p class="tax">Tax included</p>
-
             </header>
 
-            <section  role="region" aria-labelledby="heading_1 heading_2 ">
+            <form action="get" role="form" aria-labelledby="heading_1 heading_2 ">
                 <div>
-                    <h2 class="heading_2">Size</h2>
+                    <h2 class="heading_2" aria-label="Size">Size</h2>
                 </div>
                 <div>
-                    <button class="button__size button__size_xs">XS</button>
-                    <button class="button__size button__size_s">S</button>
-                    <button class="button__size button__size_m">M</button>
-                    <button class="button__size button__size_l">L</button>
-                    <button class="button__size button__size_xl">XL</button>
-                    <button class="button__size button__size_2xl">2XL</button>
+                    <input type="radio" name="size" id="" value="XS">XS
+                    <input type="radio" name="size" id="" value="S">S
+                    <input type="radio" name="size" id="" value="M">M
+                    <input type="radio" name="size" id="" value="L">L
+                    <input type="radio" name="size" id="" value="XL">XL
+                    <input type="radio" name="size" id="" value="2XL">2XL
+                    
                 </div>
             </section>
             <section>
@@ -63,42 +64,59 @@
                     <h2>Color</h2>
                 </div>
                 <div>
-                    <button class="button__color button__color_white"></button>
-                    <button class="button__color button__color_black"></button>
-                    <button class="button__color button__color_grey"></button>
-                    <button class="button__color button__color_purpleLatte"></button>
-                    <button class="button__color button__color_pink"></button>
-                    <button class="button__color button__color_orange"></button>
-                </div>
+                    <input type="radio" name="color" id="" class="button__color button__color_white" value="white">
+                    <input type="radio" name="color" id="" class="button__color button__color_black" value="black">
+                    <input type="radio" name="color" id="" class="button__color button__color_grey" value="grey">
+                    <input type="radio" name="color" id="" class="button__color button__color_purpleLatte" value="purple latte">
+                    <input type="radio" name="color" id="" class="button__color button__color_pink" value="pink">
+                    <input type="radio" name="color" id="" class="button__color button__color_orange" value="orange">
+                    
             </section>
             <section>
                 <div>
                     <h2>Quantity</h2>
                 </div>
                 <div>
-                    <button class="button button__addToCart">ADD TO CART</button>
-                    <button class="button button__buyItNow">BUY IT NOW</button>
+                    <input type="button" name="quantity">-
+                    <input type="text" name="quantity">
+                    <input type="button" name="quantity">+
                 </div>
-                <p></p>
-            </section>
-            <section>
                 <div>
-                    <h2></h2>
+                    <div>
+                        <button type="submit" class="button button__addToCart">ADD TO CART</button>
+                    </div>
+                    <div>
+                        <button type="submit" class="button button__buyItNow">BUY IT NOW</button>
+                    </div>
                 </div>
-                <div></div>
+                size
             </section>
-            <section>
-                <div>
-                    <h2></h2>
-                </div>
-                <div></div>
-            </section>
-        </section>
-
+            </form>
         </article>
-    </main>
-    <footer>
         <section>
+            <details>
+                <summary>
+                    Sizing & Fit
+                </summary>
+                <p>Olga is 175cm, she is wearing a size S.</p>
+            </details>
+            <details>
+                <summary>
+                    Composition & Care
+                </summary>
+                <p></p>
+            </details>
+            <details>
+                <summary>
+                    Delivery & Returns
+                </summary>
+                <p></p>
+            </details>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer role="contentinfo">
+        <section class="footer" role="">
             <section>
                 <h2>ABOUT</h2>
                 <ul>

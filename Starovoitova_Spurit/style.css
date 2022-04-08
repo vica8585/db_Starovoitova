@@ -7,17 +7,31 @@
 .button__size {
     width: 40px;
     height: 40px;
+    background-color: white;
+    border: 1px solid #CCCCCC;
+}
+.button__size:hover{
+    
+    border: 1px solid black;
 }
 .button__color {
+    box-sizing: content-box;
+    
     width: 34px;
     height: 34px;
     padding: 3px;
+    border: 2px solid white;
+    
 }
 .button__color:hover{
-    border: 1px solid black;
+    box-sizing: content-box;    
+    width: 34px;
+    height: 34px;
+    padding: 3px;
+    border: 2px solid #CCCCCC;
 }
 .button__color_white {
-    background-color: white;
+    background: white;
 }
 .button__color_black {
     background: black;
@@ -46,3 +60,44 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+.skiplink {
+    position:absolute;
+    top:-200px;
+    left:2px;
+    transition:top 0.2s;
+    }
+.skiplink:focus {
+    top:20px;
+    }
+details{
+    border-bottom: 1px #ccc solid;
+}   
+details > summary {
+        padding: 5px;
+        background-color: white;
+        color: black;
+        
+        cursor: pointer;
+        list-style: none;
+    }
+ 
+details > p {
+        
+        padding: 10px;
+    }
+ 
+details[open] > summary {
+    color:black; 
+   
+}
+summary:before {
+   content: "+";
+   font-size: 20px;
+   font-weight: bold;
+   margin: -5px 5px 0 0;
+}
+ 
+details[open] summary:before {
+   content: "-";
+   border: none;
+}
