@@ -13,6 +13,9 @@ nav ul li {
     height: 34px;
     padding: 3px;
 }
+.button__color:hover{
+    border: 1px solid black;
+}
 .button__color_white {
     background-color: white;
 }
@@ -31,3 +34,15 @@ nav ul li {
 .button__color_orange {
     background: #F8CAB1;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
