@@ -1,0 +1,15 @@
+{
+    "background_color": "white",
+    "name": "Susparsa",
+    "short_name": "Susparsa",
+    "icons": [
+        {
+          "src": "icon.png",
+          "sizes": "32x32",
+          "type": "image/png",
+          "purpose":"maskable"
+        }],
+        "display": "standalone",
+        "start_url": "index.html",
+        "lang": "en-US"
+}

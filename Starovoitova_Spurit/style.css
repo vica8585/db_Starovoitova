@@ -1,39 +1,106 @@
+@font-face {
+    font-family: 'Avenir Next Rounded Std';
+    src: url('font/AvenirNextRoundedStd-Italic.eot');
+    src: local('Avenir Next Rounded Std Italic'), local('AvenirNextRoundedStd-Italic'),
+        url('font/AvenirNextRoundedStd-Italic.eot?#iefix') format('embedded-opentype'),
+        url('font/AvenirNextRoundedStd-Italic.woff2') format('woff2'),
+        url('font/AvenirNextRoundedStd-Italic.woff') format('woff'),
+        url('font/AvenirNextRoundedStd-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Rounded Std';
+    src: url('font/AvenirNextRoundedStd-BoldIt.eot');
+    src: local('Avenir Next Rounded Std Bold Italic'), local('AvenirNextRoundedStd-BoldIt'),
+        url('font/AvenirNextRoundedStd-BoldIt.eot?#iefix') format('embedded-opentype'),
+        url('font/AvenirNextRoundedStd-BoldIt.woff2') format('woff2'),
+        url('font/AvenirNextRoundedStd-BoldIt.woff') format('woff'),
+        url('font/AvenirNextRoundedStd-BoldIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Rounded Std';
+    src: url('font/AvenirNextRoundedStd-Reg.eot');
+    src: local('Avenir Next Rounded Std Regular'), local('AvenirNextRoundedStd-Reg'),
+        url('font/AvenirNextRoundedStd-Reg.eot?#iefix') format('embedded-opentype'),
+        url('font/AvenirNextRoundedStd-Reg.woff2') format('woff2'),
+        url('font/AvenirNextRoundedStd-Reg.woff') format('woff'),
+        url('font/AvenirNextRoundedStd-Reg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Rounded Std';
+    src: url('font/AvenirNextRoundedStd-Med.eot');
+    src: local('Avenir Next Rounded Std Medium'), local('AvenirNextRoundedStd-Med'),
+        url('font/AvenirNextRoundedStd-Med.eot?#iefix') format('embedded-opentype'),
+        url('font/AvenirNextRoundedStd-Med.woff2') format('woff2'),
+        url('font/AvenirNextRoundedStd-Med.woff') format('woff'),
+        url('font/AvenirNextRoundedStd-Med.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Rounded Std';
+    src: url('font/AvenirNextRoundedStd-DemiIt.eot');
+    src: local('Avenir Next Rounded Std Demi Italic'), local('AvenirNextRoundedStd-DemiIt'),
+        url('font/AvenirNextRoundedStd-DemiIt.eot?#iefix') format('embedded-opentype'),
+        url('font/AvenirNextRoundedStd-DemiIt.woff2') format('woff2'),
+        url('font/AvenirNextRoundedStd-DemiIt.woff') format('woff'),
+        url('font/AvenirNextRoundedStd-DemiIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Rounded Std';
+    src: url('font/AvenirNextRoundedStd-MedIt.eot');
+    src: local('Avenir Next Rounded Std Medium Italic'), local('AvenirNextRoundedStd-MedIt'),
+        url('font/AvenirNextRoundedStd-MedIt.eot?#iefix') format('embedded-opentype'),
+        url('font/AvenirNextRoundedStd-MedIt.woff2') format('woff2'),
+        url('font/AvenirNextRoundedStd-MedIt.woff') format('woff'),
+        url('font/AvenirNextRoundedStd-MedIt.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Rounded Std';
+    src: url('font/AvenirNextRoundedStd-Demi.eot');
+    src: local('Avenir Next Rounded Std Demi'), local('AvenirNextRoundedStd-Demi'),
+        url('font/AvenirNextRoundedStd-Demi.eot?#iefix') format('embedded-opentype'),
+        url('font/AvenirNextRoundedStd-Demi.woff2') format('woff2'),
+        url('font/AvenirNextRoundedStd-Demi.woff') format('woff'),
+        url('font/AvenirNextRoundedStd-Demi.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Rounded Std';
+    src: url('font/AvenirNextRoundedStd-Bold.eot');
+    src: local('Avenir Next Rounded Std Bold'), local('AvenirNextRoundedStd-Bold'),
+        url('font/AvenirNextRoundedStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('font/AvenirNextRoundedStd-Bold.woff2') format('woff2'),
+        url('font/AvenirNextRoundedStd-Bold.woff') format('woff'),
+        url('font/AvenirNextRoundedStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+body {
+    font-family: 'Avenir Next Rounded Std';
+}
+
 .list {
     list-style-type: none;
 }
-.nav__list{
-    display: inline-block;  
-}    
-.button__size {
-    width: 40px;
-    height: 40px;
-}
-.button__color {
-    width: 34px;
-    height: 34px;
-    padding: 3px;
-}
-.button__color:hover{
-    border: 1px solid black;
-}
-.button__color_white {
-    background-color: white;
-}
-.button__color_black {
-    background: black;
-}
-.button__color_grey {
-    background: #AEAEB0;
-}
-.button__color_purpleLatte {
-    background: #BA9BE5;    
-}
-.button__color_pink {
-    background: #E9A0A7;
-}
-.button__color_orange {
-    background: #F8CAB1;
-}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -46,3 +113,44 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+.skiplink {
+    position:absolute;
+    top:-200px;
+    left:2px;
+    transition:top 0.2s;
+    }
+.skiplink:focus {
+    background-color: #ccc;
+    top:20px;
+    }
+
+details{
+    border-bottom: 1px #ccc solid;
+}   
+details > summary {
+        padding: 5px;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        list-style: none;
+    }
+ 
+details > p {
+        padding: 10px;
+    }
+ 
+details[open] > summary {
+    color:black; 
+}
+summary::after {
+   content: "+";
+   font-size: 20px;
+   font-weight: bold;
+   margin: -5px 5px 0 0;
+}
+ 
+details[open] summary::after {
+   content: "-";
+   border: none;
+}
+

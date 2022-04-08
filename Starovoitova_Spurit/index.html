@@ -5,136 +5,279 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>White unisex T-shirt Susparsa</title>
+    <meta name="description" content="A unisex basic garment with a loose fit. Light and comfortable to your skin.">
+    <title>White unisex T-shirt - Susparsa</title>
+    <link rel="icon" href="imgs/icon .ico" sizes="any">
+    <link rel="icon" href="imgs/icon .png" sizes="any">
+    <link rel="icon" href="imgs/icon.svg" type="image/svg+xml" >
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
 </head>
-<body>
-    <header>
-        <!--Main navigation-->
-        <nav>
-            <ul>
+<body>    
+    <header role="banner">
+        <a class="skiplink" aria-label="Skip to main content" href="#main">Main content</a>        
+        <!--Navigation-->
+        <nav role="navigation" aria-label="Main navigation">
+            <ul role="list">
                 <li class="nav__list list"><a href="#">Women</a></li>              
                 <li class="nav__list list"><a href="#">Men</a></li>
                 <li class="nav__list list"><a href="#">Kids</a></li>        
                 <li class="nav__list list"><a href="#">Company</a></li>
-                <li class="nav__list list"><a href="/index.html">
-                    <img src="imgs/logoSusparsa.jpg" alt="Logo Susparsa">
-                    </a></li>  
-                <li class="nav__list list"><a href="#">Account</a></li>      
-                <li class="nav__list list"><a href="#">Search</a></li>        
-                <li class="nav__list list"><a href="#">Cart (<span>0</span>)</a></li>
-                <li class="nav__list list"><a href="#">Home</a></li>
-                <li class="nav__list list"><a href="#">Women</a></li>
-                <li class="nav__list list"><a href="#">White unisex t-shirt</a></li>
             </ul>
         </nav>
+
+            <a href="/index.html">
+                <span class="visually-hidden" >Homepage</span>
+                <img src="imgs/logo.svg" alt="" role="presentation">
+            </a>
+        <nav role="navigation" aria-label="Account">
+            <ul role="list">
+                <li class="nav__list list"><a href="/account">Account</a></li>      
+                <li class="nav__list list"><a href="/search">Search</a></li>        
+                <li class="nav__list list"><a href="/cart">Cart <span class="visually-hidden">Has 0 items</span></a> (<span class="cart__quantity" role="presentation" aria-hidden="true">0</span>)</li>
+            </ul>
+        </nav>
+        <nav role="navigation" aria-label="Breadcrumbs">
+            <ol>
+                <li class="nav__list list"><a href="/homepage">Home</a></li>
+                <li class="nav__list list"><a href="/women">Women</a></li>
+                <li class="nav__list list" aria-current="page"><a href="/product">White unisex t-shirt</a></li>
+            </ol>                
+        </nav>
     </header>
-    <main>
+    <main id="main" tabindex="-1" role="main" aria-label="Main content">
         <!--Product card-->
-        <article class="product-card" aria-label="Product card">
+        <article class="product-card" role="article" aria-label="Product card">
             <section>
+            <header>
+                <h1 id="main_heading" aria-label="White unisex t-shirt">White unisex t-shirt</h1>
+                <p class="code">CHF <span aria-live="polite">40</span></p>
+                <p class="tax">Tax <span>included</span></p>
+            </header>
+
+            <form action="/sendform" name="form" role="form" aria-labelledby="main_heading heading_2 ">
+               <fieldset>
+                   <legend>Size</legend>
+                   <div class="radio">
+                        <input id="size_xs" type="radio" name="size" value="XS">
+                        <label for="size_xs">XS</label>
+                        <input id="size_s" type="radio" name="size" value="S">
+                        <label for="size_s">S</label>
+                        <input id="size_m" type="radio" name="size" value="M">
+                        <label for="size_m">M</label>
+                        <input id="size_l" type="radio" name="size" value="L">
+                        <label for="size_l">L</label>
+                        <input id="size_xl" type="radio" name="size" value="XL">
+                        <label for="size_xl">XL</label>
+                        <input id="size_2xl" type="radio" name="size" value="2XL">
+                        <label for="size_2xl">2XL</label>
+                    </div>
+               </fieldset>
+               <fieldset>
+                   <legend>Color</legend>
+                   <div class="radio">
+                        <input id="white"  type="radio" name="color" class="button__color button__color_white" value="white">
+                        <label for="white">white</label>
+                        <input id="black"  type="radio" name="color" class="button__color button__color_black" value="black">
+                        <label for="black">black</label>
+                        <input id="grey"  type="radio" name="color" class="button__color button__color_grey" value="grey">
+                        <label for="grey">grey</label>
+                        <input id="purple_latte"  type="radio" name="color" class="button__color button__color_purpleLatte" value="purple_latte">
+                        <label for="purple_latte">purple_latte</label>
+                        <input id="pink"  type="radio" name="color" class="button__color button__color_pink" value="pink">
+                        <label for="pink">pink</label>
+                        <input id="orange"  type="radio" name="color" class="button__color button__color_orange" value="orange">
+                        <label for="orange">orange</label>
+                   </div>
+               </fieldset>
+            <section>
+                <label for="quantity">Quantity</label>
+                <input id="quantity" type="number" min="1" max="999">
+                 <button type="button" >
+                     <span aria-hidden="true">-</span>
+                     <span class="visually-hidden">Decrease quantity</span>
+                </button> 
+                 <button type="button" aria-hidden="true">
+                    <span aria-hidden="true">+</span>
+                    <span class="visually-hidden">Increase quantity</span>
+                 </button>   
+                <div>
+                    <div>
+                        <button type="submit" class="button button__addToCart">ADD TO CART</button>
+                    </div>
+                    <div>
+                        <button type="submit" class="button button__buyItNow">BUY IT NOW</button>
+                    </div>
+                </div>
+            </section>
+            </form>
+            <section>
+                <p>A unisex basic garment with a loose fit. Light and comfortable to your skin.
+                </p>
+                <p>Certification of cotton - <span aria-live="polite">GOTS</span></p>
                 <figure>
                     <img src="imgs/mainPic.jpg" alt="White unisex t-shirt">
                     <figcaption class="visually-hidden">White unisex t-shirt</figcaption>
                 </figure>
             </section>
-            <section>
-            <header>
-                <h1 id="heading_1">White unisex t-shirt</h1>
-                <p class="code">CHF 40</p>
-                <p class="tax">Tax included</p>
-
-            </header>
-
-            <section  role="region" aria-labelledby="heading_1 heading_2 ">
-                <div>
-                    <h2 class="heading_2">Size</h2>
-                </div>
-                <div>
-                    <button class="button__size button__size_xs">XS</button>
-                    <button class="button__size button__size_s">S</button>
-                    <button class="button__size button__size_m">M</button>
-                    <button class="button__size button__size_l">L</button>
-                    <button class="button__size button__size_xl">XL</button>
-                    <button class="button__size button__size_2xl">2XL</button>
-                </div>
-            </section>
-            <section>
-                <div>
-                    <h2>Color</h2>
-                </div>
-                <div>
-                    <button class="button__color button__color_white"></button>
-                    <button class="button__color button__color_black"></button>
-                    <button class="button__color button__color_grey"></button>
-                    <button class="button__color button__color_purpleLatte"></button>
-                    <button class="button__color button__color_pink"></button>
-                    <button class="button__color button__color_orange"></button>
-                </div>
-            </section>
-            <section>
-                <div>
-                    <h2>Quantity</h2>
-                </div>
-                <div>
-                    <button class="button button__addToCart">ADD TO CART</button>
-                    <button class="button button__buyItNow">BUY IT NOW</button>
-                </div>
-                <p></p>
-            </section>
-            <section>
-                <div>
-                    <h2></h2>
-                </div>
-                <div></div>
-            </section>
-            <section>
-                <div>
-                    <h2></h2>
-                </div>
-                <div></div>
-            </section>
-        </section>
-
         </article>
-    </main>
-    <footer>
+        <!--Accordeon-->
         <section>
-            <section>
-                <h2>ABOUT</h2>
-                <ul>
-                    <li class="list"><a href="#">Susparsa store <br>Geneva, Switzeland</a></li>
-                    <li class="list">
-                        <a href="#"><img src="imgs/facebook.jpg" alt="Facebook"></a>
-                        <a href="#"><img src="imgs/instagram.jpg" alt="Instagram"></a>
-                    </li>                   
-                </ul>
-            </section>
-            <section>
-                <h2>COMPANY</h2>
-                <ul>
-                    <li class="list"><a href="#">Women</a></li>
-                    <li class="list"><a href="#">Men</a></li>
-                    <li class="list"><a href="#">Kids</a></li>
-                    <li class="list"><a href="#">About Us</a></li>
-                    <li class="list"><a href="#">Our Materials</a></li>
-                </ul>
-            </section>
-            <section>
-                <h2>Useful Links</h2>
-                <ul> 
-                    <li class="list"><a href="#">Privacy Policy</a></li>
-                    <li class="list"><a href="#">Shipping Policy</a></li>
-                    <li class="list"><a href="#">Return & Refund Policy</a></li>
-                    <li class="list"><a href="#">Terms of Service</a></li>
-                    <li class="list"><a href="#">Contact Us</a></li>
-                </ul>
-            </section>
-            <section>
-               <p>© Susparsa 2021</p>
-            </section>
+            <details>
+                <summary>
+                    Sizing & Fit
+                </summary>
+                <p>Olga is 175cm, she is wearing a size S.</p>
+            </details>
+            <details>
+                <summary>
+                    Composition & Care
+                </summary>
+                <p></p>
+            </details>
+            <details>
+                <summary>
+                    Delivery & Returns
+                </summary>
+                <p></p>
+            </details>
         </section>
-        
-
+        <!--You may also like-->
+        <section aria-label="You may also like">
+            <div>
+                <p>You may also like</p>
+            </div>
+            <ul role="list">
+                
+                <li>
+                    <div>
+                        <img src="imgs/DSC_2518.jpg" alt="">
+                        <p>Product name</p>
+                        <form action="post">
+                            <fieldset>
+                                <legend>Color</legend>
+                                <div class="radio">
+                                    <input id="brown"  type="radio" name="color" class="button__color button__color_brown" value="brown">
+                                    <label for="brown">brown</label>
+                                    <input id="pink"  type="radio" name="color" class="button__color button__color_pink" value="pink">
+                                    <label for="pink">pink</label>
+                                    <input id="purple_latte"  type="radio" name="color" class="button__color button__color_purple_latte" value="purple_latte">
+                                    <label for="purple_latte">purple_latte</label>
+                                    <input id="violet"  type="radio" name="color" class="button__color button__color_purpleLatte" value="violet">
+                                    <label for="violet">violet</label>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <p class="code">CHF <span aria-live="polite">40</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="imgs/DSC_5389 1.jpg" alt="">
+                        <p>Product name</p>
+                        <form action="post">
+                            <fieldset>
+                                <legend>Color</legend>
+                                <div class="radio">
+                                    <input id="brown"  type="radio" name="color" class="button__color button__color_brown" value="brown">
+                                    <label for="brown">brown</label>
+                                    <input id="pink"  type="radio" name="color" class="button__color button__color_pink" value="pink">
+                                    <label for="pink">pink</label>
+                                    <input id="purple_latte"  type="radio" name="color" class="button__color button__color_purple_latte" value="purple_latte">
+                                    <label for="purple_latte">purple_latte</label>
+                                    <input id="violet"  type="radio" name="color" class="button__color button__color_purpleLatte" value="violet">
+                                    <label for="violet">violet</label>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <p class="code">CHF <span aria-live="polite">40</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="imgs/DSC_2330.jpg" alt="">
+                        <p>Product name</p>
+                        <form action="post">
+                            <fieldset>
+                                <legend>Color</legend>
+                                <div class="radio">
+                                    <input id="brown"  type="radio" name="color" class="button__color button__color_brown" value="brown">
+                                    <label for="brown">brown</label>
+                                    <input id="pink"  type="radio" name="color" class="button__color button__color_pink" value="pink">
+                                    <label for="pink">pink</label>
+                                    <input id="purple_latte"  type="radio" name="color" class="button__color button__color_purple_latte" value="purple_latte">
+                                    <label for="purple_latte">purple_latte</label>
+                                    <input id="violet"  type="radio" name="color" class="button__color button__color_purpleLatte" value="violet">
+                                    <label for="violet">violet</label>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <p class="code">CHF <span aria-live="polite">40</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="imgs/image 6.jpg" alt="">
+                        <p>Product name</p>
+                        <form action="post">
+                            <fieldset>
+                                <legend>Color</legend>
+                                <div class="radio">
+                                    <input id="brown"  type="radio" name="color" class="button__color button__color_brown" value="brown">
+                                    <label for="brown">brown</label>
+                                    <input id="pink"  type="radio" name="color" class="button__color button__color_pink" value="pink">
+                                    <label for="pink">pink</label>
+                                    <input id="purple_latte"  type="radio" name="color" class="button__color button__color_purple_latte" value="purple_latte">
+                                    <label for="purple_latte">purple_latte</label>
+                                    <input id="violet"  type="radio" name="color" class="button__color button__color_purpleLatte" value="violet">
+                                    <label for="violet">violet</label>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <p class="code">CHF <span aria-live="polite">40</span></p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer role="contentinfo" aria-label="Site">
+        <section aria-labelledby="contacts_heading">
+            <h2 id="contacts_heading" class="visually-hidden">Contacts</h2>
+            <span>ABOUT</span>
+            <address>
+                <p aria-hidden="true">Susparsa store</p>
+                <p><span class="visually-hidden">Our address</span>Geneva, Switzeland</p>
+                <a href="#"><img src="imgs/facebook.jpg" alt="Facebook"></a>
+                <a href="#"><img src="imgs/instagram.jpg" alt="Instagram"></a>
+            </address>
+        </section>
+        <ul role="list">
+            <li>
+                <span>COMPANY</span>
+                <ul role="list">
+                    <li class="list"><a href="/women">Women</a></li>
+                    <li class="list"><a href="/men">Men</a></li>
+                    <li class="list"><a href="/kids">Kids</a></li>
+                    <li class="list"><a href="/about-us">About Us</a></li>
+                    <li class="list"><a href="/materials">Our Materials</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>USEFUL LINKS</span>
+                <ul role="list">
+                    <li class="list"><a href="/privacy_policy">Privacy Policy</a></li>
+                    <li class="list"><a href="/shipping_policy">Shipping Policy</a></li>
+                    <li class="list"><a href="/return_refund_policy">Return & Refund Policy</a></li>
+                    <li class="list"><a href="/terms_of_service">Terms of Service</a></li>
+                    <li class="list"><a href="/contact_us">Contact Us</a></li>
+                </ul>
+            </li>
+        </ul>  
+        <section aria-labelledby="contacts_copyright">
+            <h2 id="contacts_copyright" class="visually-hidden">Contacts</h2>
+            <p><small>© Susparsa 2021</small></p>
+        </section>          
     </footer>
 </body>
 </html>
