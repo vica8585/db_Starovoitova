@@ -9,8 +9,6 @@
     font-weight: normal;
     font-style: italic;
 }
-<<<<<<< HEAD
-
 @font-face {
     font-family: 'Avenir Next Rounded Std';
     src: url('font/AvenirNextRoundedStd-BoldIt.eot');
@@ -22,7 +20,6 @@
     font-weight: bold;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Avenir Next Rounded Std';
     src: url('font/AvenirNextRoundedStd-Reg.eot');
@@ -34,7 +31,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Avenir Next Rounded Std';
     src: url('font/AvenirNextRoundedStd-Med.eot');
@@ -46,7 +42,6 @@
     font-weight: 500;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Avenir Next Rounded Std';
     src: url('font/AvenirNextRoundedStd-DemiIt.eot');
@@ -57,9 +52,7 @@
         url('font/AvenirNextRoundedStd-DemiIt.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
-=======
-
-
+}
 @font-face {
     font-family: 'Avenir Next Rounded Std';
     src: url('font/AvenirNextRoundedStd-MedIt.eot');
@@ -71,7 +64,6 @@
     font-weight: 500;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Avenir Next Rounded Std';
     src: url('font/AvenirNextRoundedStd-Demi.eot');
@@ -83,7 +75,6 @@
     font-weight: bold;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Avenir Next Rounded Std';
     src: url('font/AvenirNextRoundedStd-Bold.eot');
@@ -98,11 +89,6 @@
 body {
     font-family: 'Avenir Next Rounded Std';
 }
-
-.list {
-    list-style-type: none;
-}
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -122,15 +108,9 @@ body {
     transition:top 0.2s;
     }
 .skiplink:focus {
-<<<<<<< HEAD
     background-color: #ccc;
     top:20px;
     }
-
-=======
-    top:20px;
-    }
->>>>>>> 5e736cc92a923fc580817d6907ddf1b119544d20
 details{
     border-bottom: 1px #ccc solid;
 }   
@@ -138,47 +118,23 @@ details > summary {
         padding: 5px;
         background-color: white;
         color: black;
-<<<<<<< HEAD
-=======
-        
->>>>>>> 5e736cc92a923fc580817d6907ddf1b119544d20
         cursor: pointer;
         list-style: none;
     }
- 
 details > p {
-<<<<<<< HEAD
-=======
-        
->>>>>>> 5e736cc92a923fc580817d6907ddf1b119544d20
         padding: 10px;
     }
  
 details[open] > summary {
     color:black; 
-<<<<<<< HEAD
 }
-summary::after {
-=======
-   
+summary:after {
+    content: "+";
+    font-size: 20px;
+    font-weight: bold;
+    margin: -5px 5px 0 0;
 }
-summary:before {
->>>>>>> 5e736cc92a923fc580817d6907ddf1b119544d20
-   content: "+";
-   font-size: 20px;
-   font-weight: bold;
-   margin: -5px 5px 0 0;
-}
- 
-<<<<<<< HEAD
-details[open] summary::after {
+details[open] summary:after {
    content: "-";
    border: none;
 }
-
-=======
-details[open] summary:before {
-   content: "-";
-   border: none;
-}
->>>>>>> 5e736cc92a923fc580817d6907ddf1b119544d20
